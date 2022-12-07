@@ -64,6 +64,9 @@ body{
 
 /* Add a black background color to the top navigation */
 .topnav {
+  margin: auto;
+  padding-top: 10px;
+  width: 90%;
   border-radius: 25px;
   background-color: #333;
   overflow: hidden;
