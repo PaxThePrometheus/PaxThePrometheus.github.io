@@ -171,8 +171,15 @@ body {
 
 /* fonts over here*/
 
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&family=Source+Code+Pro:wght@200&display=swap');
+
 .p1 {
   font-family: 'Inconsolata', monospace;
+}
+
+.h1 {
+  font-family: 'Source Code Pro', monospace;
 }
 
 button {
@@ -294,17 +301,17 @@ button {
 /* This is for the scrollbar */
 
 /* width */
-::-webkit-scrollbar{
+::-webkit-scrollbar {
   background: transparent;
   width: 10px;
 }
 
-::-webkit-scrollbar-thumb{
-  background: lightgray;
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2);
   border-radius: 25px;
 }
 
-::-webkit-scrollbar-thumb hover{
+::-webkit-scrollbar-thumb hover {
   background: lightgray;
   border-radius: 25px;
   box-shadow: 0 0 1rem 0 rgba(255, 255, 255, 0.2);
