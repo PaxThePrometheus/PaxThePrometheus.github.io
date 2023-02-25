@@ -22,3 +22,7 @@ git clone https://github.com/PaxThePrometheus/visual-novel
 # After that, boot up ren'py and locate the forked project
 # After you've done that, launch the project for beta testing
 ````
+
+````bash
+powershell -ExecutionPolicy Bypass -File C:\Users\ADMIN\AppData\Roaming\npm\http-server.ps1
+````

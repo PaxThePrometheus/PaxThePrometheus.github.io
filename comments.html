@@ -5,7 +5,7 @@
 
 <head>
     <link rel="icon" type="image/x-icon" href="icon.ico">
-    <title>Archoneux Development™ |Games</title>
+    <title>Archoneux Development™ | About</title>
     <meta content="Archoneux Development™" property="og:title" />
     <meta content="Welcome to the Archoneux Development Site!" property="og:description" />
     <meta content="https://imgur.com/a/g8EHHoB" property="og:url" />
@@ -30,20 +30,17 @@
             <a href="games" class="btn-6 custom-btn">Games</a>
         </div>
     </div>
-    <div style="padding-top: 25px;">
-        <div class="center-third container p1" style="padding-top: 12px; width: 128px; height: 48px;">
-            <div align="center">
-            <a href="https://drive.google.com/uc?export=download&id=1fmO1m5rpAPokgbsZJO4EVIzW9OtN0dM7"
-                download="AHTF" target="_blank" rel="noreferrer noopener">Download</a>
-            </div>
-        </div>
+    <div class="center-third container">
+        <form id="comment-form">
+            <textarea id="comment-text" placeholder="Enter your comment here"></textarea>
+            <br>
+            <input type="button" value="Submit" onclick="submitComment()">
+        </form>
+        <script type="module" src="index.js"></script>
     </div>
-    </div>
-    <div style="padding-top: 15px;">
-        <div class="powr-comments center-third" id="cc09e812_1670484814"
-            style="width: 1080px; padding-top: 15px; overflow: auto;"></div>
-        <script src="https://www.powr.io/powr.js?platform=html"></script>
-    </div>
+
+    <div class="center-third container" id="comments"></div>
+    <script src="anim.js"></script>
 </body>
 
 </html>
