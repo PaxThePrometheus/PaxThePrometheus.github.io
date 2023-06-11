@@ -4,13 +4,16 @@ body {
   height: 100%;
 }
 
+body {
+  background-color: #454545;
+}
 /* body {
     background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;
 } */
 
-body {
+/* body {
   background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
   background-size: 400% 1500%;
   animation: gradient 20s ease infinite;
@@ -29,7 +32,7 @@ body {
   100% {
     background-position: 0% 50%;
   }
-}
+} */
 
 /* Add a black background color to the top navigation */
 .topnav {
