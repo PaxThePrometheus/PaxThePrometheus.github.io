@@ -1,335 +1,194 @@
-html,
-body {
-  width: 100%;
-  height: 100%;
-}
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,300italic,400italic&subset=latin,latin-ext');
 
-/* body {
-    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-    background-size: 400% 400%;
-    animation: gradient 15s ease infinite;
-} */
+html {
+    height: 100%;
+    background-color: #282b30;
+}
 
 body {
-  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-  background-size: 400% 1500%;
-  animation: gradient 20s ease infinite;
-  height: 100vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: top;
+    width: 100%;
+    height: 100%;
+    font-family: Arial, Helvetica;
+    letter-spacing: 0.02em;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
 }
-
-@keyframes gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-
-  50% {
-    background-position: 100% 50%;
-  }
-
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
-/* Add a black background color to the top navigation */
-.topnav {
-  height: 130px;
-  margin: auto;
-  padding-top: 15px;
-  background: inherit;
-  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5), 7px 7px 20px 0px rgba(0, 0, 0, .1), 4px 4px 5px 0px rgba(0, 0, 0, .1);
-  overflow: hidden;
-}
-
-/* Style the links inside the navigation bar */
-.topnav a {
-  color: #f2f2f2;
-  text-align: center;
-  padding-bottom: 5px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-/* Change the color of links on hover */
-/* .topnav a:hover {
-  background-color: #ddd;
-  color: black;
-} */
-
-/* Add a color to the active/current link */
-/* .topnav a.active {
-  background-color: #04AA6D;
-  color: white;
-} */
-
-/* frosted plates */
 
 .container {
-  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
-  border-radius: 5px;
-  position: relative;
-  z-index: 1;
-  background: inherit;
-  overflow: hidden;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
+    border-radius: 5px;
+    position: relative;
+    z-index: 1;
+    background: inherit;
+    overflow: hidden;
 }
 
 .container:hover {
-  box-shadow: 0 0 1rem 0 rgba(255, 255, 255, .2);
-  border-radius: 5px;
-  position: relative;
-  z-index: 1;
-  background: inherit;
-  overflow: hidden;
+    box-shadow: 0 0 1rem 0 rgba(255, 255, 255, .2);
+    border-radius: 5px;
+    position: relative;
+    z-index: 1;
+    background: inherit;
+    overflow: hidden;
 }
 
 .container:before {
-  content: "";
-  position: absolute;
-  background: inherit;
-  z-index: -1;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  box-shadow: inset 0 0 5000px rgba(255, 255, 255, .1);
-  filter: blur(10px);
-  margin: -20px;
+    content: "";
+    position: absolute;
+    background: inherit;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-shadow: inset 0 0 5000px rgba(255, 255, 255, .1);
+    filter: blur(10px);
+    margin: -20px;
 }
 
-.discordcont {
-  width: 30%;
-  height: 550px;
-  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
-  border-radius: 5px;
-  position: relative;
-  z-index: 1;
-  background: inherit;
-  overflow: hidden;
+nav {
+    max-width: 960px;
+    mask-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #ffffff 25%, #ffffff 75%, rgba(255, 255, 255, 0) 100%);
+    margin: 0 auto;
+    padding: 60px 0;
 }
 
-.discordcont:hover {
-  width: 30%;
-  height: 550px;
-  box-shadow: 0 0 1rem 0 rgba(255, 255, 255, 0.2);
-  border-radius: 5px;
-  position: relative;
-  z-index: 1;
-  background: inherit;
-  overflow: hidden;
+nav ul {
+    text-align: center;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 100%);
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
 }
 
-
-.discordcont:before {
-  content: "";
-  position: absolute;
-  background: inherit;
-  z-index: -1;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  box-shadow: inset 0 0 5000px rgba(255, 255, 255, .1);
-  filter: blur(10px);
-  margin: -20px;
+nav ul li {
+    display: inline-block;
 }
 
-.glow {
-  width: 550px;
-  height: 190px;
-  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
-  border-radius: 5px;
-  position: relative;
-  z-index: 1;
-  background: inherit;
-  overflow: hidden;
+nav ul li a {
+    padding: 18px;
+    font-family: "Open Sans";
+    text-transform: uppercase;
+    color: rgba(152, 152, 152, 0.5);
+    font-size: 18px;
+    text-decoration: none;
+    display: block;
 }
 
-.glow:hover {
-  width: 550px;
-  height: 190px;
-  box-shadow: 0 0 1rem 0 rgba(255, 255, 255, 0.2);
-  border-radius: 5px;
-  position: relative;
-  z-index: 1;
-  background: inherit;
-  overflow: hidden;
+nav ul li a:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+    background: rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.7);
 }
 
-.glow::before {
-  content: "";
-  position: absolute;
-  background: inherit;
-  z-index: -1;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  box-shadow: inset 0 0 5000px rgba(255, 255, 255, .1);
-  filter: blur(10px);
-  margin: -20px;
-}
-
-/* fonts over here*/
-
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&family=Source+Code+Pro:wght@200&display=swap');
-
-.p1 {
-  font-family: 'Inconsolata', monospace;
-}
-
-.h1 {
-  font-family: 'Source Code Pro', monospace;
-}
-
-button {
-  margin: 20px;
-}
-
-/* custom button*/
-
-.custom-btn {
-  width: 130px;
-  height: 40px;
-  color: #fff;
-  border-radius: 5px;
-  padding: 10px 25px;
-  font-family: 'Lato', sans-serif;
-  font-weight: 500;
-  background: transparent;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  position: relative;
-  display: inline-block;
-  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
-    7px 7px 20px 0px rgba(0, 0, 0, .1),
-    4px 4px 5px 0px rgba(0, 0, 0, .1);
-  outline: none;
-}
-
-.btn-6 {
-  background: rgb(247, 150, 192);
-  background: radial-gradient(circle, rgba(248, 200, 220, 0.5) 0%, rgba(160, 255, 160, 0.2) 100%);
-  line-height: 42px;
-  padding: 0;
-  border: none;
-}
-
-.btn-6 span {
-  position: relative;
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-
-.btn-6:before,
-.btn-6:after {
-  position: absolute;
-  content: "";
-  height: 0%;
-  width: 1px;
-  box-shadow:
-    -1px -1px 20px 0px rgba(255, 255, 255, 1),
-    -4px -4px 5px 0px rgba(255, 255, 255, 1),
-    7px 7px 20px 0px rgba(0, 0, 0, .4),
-    4px 4px 5px 0px rgba(0, 0, 0, .3);
-}
-
-.btn-6:before {
-  right: 0;
-  top: 0;
-  transition: all 500ms ease;
-}
-
-.btn-6:after {
-  left: 0;
-  bottom: 0;
-  transition: all 500ms ease;
-}
-
-.btn-6:hover {
-  background: transparent;
-  color: #76aef1;
-  box-shadow: none;
-}
-
-.btn-6:hover:before {
-  transition: all 500ms ease;
-  height: 100%;
-}
-
-.btn-6:hover:after {
-  transition: all 500ms ease;
-  height: 100%;
-}
-
-.btn-6 span:before,
-.btn-6 span:after {
-  position: absolute;
-  content: "";
-  box-shadow:
-    -1px -1px 20px 0px rgba(255, 255, 255, 1),
-    -4px -4px 5px 0px rgba(255, 255, 255, 1),
-    7px 7px 20px 0px rgba(0, 0, 0, .4),
-    4px 4px 5px 0px rgba(0, 0, 0, .3);
-}
-
-.btn-6 span:before {
-  left: 0;
-  top: 0;
-  width: 0%;
-  height: .5px;
-  transition: all 500ms ease;
-}
-
-.btn-6 span:after {
-  right: 0;
-  bottom: 0;
-  width: 0%;
-  height: .5px;
-  transition: all 500ms ease;
-}
-
-.btn-6 span:hover:before {
-  width: 100%;
-}
-
-.btn-6 span:hover:after {
-  width: 100%;
-}
-
-/* This is for the scrollbar */
-
-/* width */
 ::-webkit-scrollbar {
-  background: transparent;
-  width: 10px;
+    background: transparent;
+    width: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgba(255, 255, 255, 0.2);
-  border-radius: 25px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 25px;
 }
 
 ::-webkit-scrollbar-thumb hover {
-  background: lightgray;
-  border-radius: 25px;
-  box-shadow: 0 0 1rem 0 rgba(255, 255, 255, 0.2);
+    background: lightgray;
+    border-radius: 25px;
+    box-shadow: 0 0 1rem 0 rgba(255, 255, 255, 0.2);
 }
 
-/* center */
-
-
-.center {
-  margin: auto;
-  width: 300px;
+.card-left {
+    width: 600px;
+    height: 150px;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.2s ease-in-out;
 }
 
-.center-third {
-  margin: auto;
+.card-left:hover {
+    transform: translateX(10px);
 }
 
-.center-button {
-  margin: auto;
-  width: 1080px;
+.card-left:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: inset 0 0 5000px rgba(255, 255, 255, .1);
+    filter: blur(10px);
+    transition: box-shadow 0.5s ease-in-out;
 }
+
+.card-left:hover:before {
+    box-shadow: inset 0 0 5000px rgba(255, 255, 255, .2);
+}
+
+.card-right {
+    width: 600px;
+    height: 150px;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.2s ease-in-out;
+}
+
+.card-right:hover {
+    transform: translateX(-10px);
+}
+
+.card-right:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: inset 0 0 5000px rgba(255, 255, 255, .1);
+    filter: blur(10px);
+    transition: box-shadow 0.5s ease-in-out;
+}
+
+.card-right:hover:before {
+    box-shadow: inset 0 0 5000px rgba(255, 255, 255, .2);
+}
+
+.card-middle {
+    width: 200px;
+    height: 315px;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.card-middle:hover {
+    background-color: #ffd900c8;
+    box-shadow: inset 0 0 5000px rgba(255, 255, 98, 0.774);
+}
+
+.card-middle:before {
+    content: "";
+    position: relative;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: inset 0 0 5000px rgba(255, 255, 255, 0.1);
+    filter: blur(10px);
+    transition: box-shadow 0.5s ease-in-out;
+}
+
+.card-middle:hover:before {
+    box-shadow: inset 0 0 5000px rgba(255, 255, 255, .2);
+}
+
