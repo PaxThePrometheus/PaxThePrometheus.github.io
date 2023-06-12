@@ -4,7 +4,7 @@
 
 html {
     height: 100%;
-    background-color: #282b30;
+    background-color: #212534;
 }
 
 body {
@@ -101,6 +101,83 @@ nav ul li a:hover {
     box-shadow: 0 0 1rem 0 rgba(255, 255, 255, 0.2);
 }
 
+.patreon {
+    background: linear-gradient(45deg, #FF2D55, #FF8E35, #FFC700);
+    background-size: 300% 300%;
+    animation: spinGradient 4s linear infinite;
+}
+
+.discord {
+    background: linear-gradient(45deg, #5865F2, #7289DA, #feb3ff);
+    background-size: 300% 300%;
+    animation: backgroundGradient 4s linear infinite;
+}
+
+.itch-io {
+    background: linear-gradient(45deg, #FF5743, #ED2939, #630C3A);
+    background-size: 300% 300%;
+    animation: spinGradient 4s linear infinite;
+}
+
+.pixiv {
+    background: linear-gradient(45deg, #EA4B96, #6A0572, #3204AB);
+    background-size: 300% 300%;
+    animation: spinGradient 4s linear infinite;
+}
+
+.twitter {
+    background: linear-gradient(45deg, #1DA1F2, #17A2F7, #1C91D1);
+    background-size: 300% 300%;
+    animation: spinGradient 2s linear infinite;
+}
+
+@keyframes spinGradient {
+    0% {
+        background-position: 0% 0%;
+    }
+
+    50% {
+        background-position: 100% 100%;
+    }
+    
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+
+@keyframes backgroundGradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    25% {
+        background-position: 25% 0%;
+    }
+
+    50% {
+        background-position: 100% 100%;
+    }
+
+    75% {
+        background-position: 75% 0%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes spinAnimation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
 .card-left {
     width: 600px;
     height: 150px;
@@ -112,6 +189,7 @@ nav ul li a:hover {
 
 .card-left:hover {
     transform: translateX(10px);
+    box-shadow: inset 0 0 5000px rgba(255, 255, 255, .1), 0 0 10px 1px rgba(255, 255, 255, .5);
 }
 
 .card-left:before {
@@ -142,6 +220,7 @@ nav ul li a:hover {
 
 .card-right:hover {
     transform: translateX(-10px);
+    box-shadow: inset 0 0 5000px rgba(255, 255, 255, .1), 0 0 10px 1px rgba(255, 255, 255, .5);
 }
 
 .card-right:before {
@@ -167,12 +246,12 @@ nav ul li a:hover {
     border-radius: 5px;
     position: relative;
     overflow: hidden;
-    transition: background-color 0.2s ease-in-out;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 }
 
 .card-middle:hover {
-    background-color: #ffd900c8;
-    box-shadow: inset 0 0 5000px rgba(255, 255, 98, 0.774);
+    transform: translateY(10px);
+    box-shadow: inset 0 0 5000px rgba(255, 255, 255, .1), 0 0 10px 1px rgba(255, 255, 255, .5);
 }
 
 .card-middle:before {
@@ -191,4 +270,3 @@ nav ul li a:hover {
 .card-middle:hover:before {
     box-shadow: inset 0 0 5000px rgba(255, 255, 255, .2);
 }
-
