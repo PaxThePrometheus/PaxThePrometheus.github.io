@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/PaxThePrometheus.github.io/static/css/main.b157d92b.css",
+    "main.css": "/PaxThePrometheus.github.io/static/css/main.7b6693bb.css",
     "main.js": "/PaxThePrometheus.github.io/static/js/main.38f27d66.js",
     "static/js/453.4d428109.chunk.js": "/PaxThePrometheus.github.io/static/js/453.4d428109.chunk.js",
     "static/media/discord.svg": "/PaxThePrometheus.github.io/static/media/discord.a9832aa2d0b1c4941a22f5bbb1223101.svg",
@@ -8,12 +8,12 @@
     "static/media/itch.svg": "/PaxThePrometheus.github.io/static/media/itch.756f707acbff35b6aba891541000f01e.svg",
     "index.html": "/PaxThePrometheus.github.io/index.html",
     "static/media/patreon.svg": "/PaxThePrometheus.github.io/static/media/patreon.91ae79c86d46d402af7708e57d2659bc.svg",
-    "main.b157d92b.css.map": "/PaxThePrometheus.github.io/static/css/main.b157d92b.css.map",
+    "main.7b6693bb.css.map": "/PaxThePrometheus.github.io/static/css/main.7b6693bb.css.map",
     "main.38f27d66.js.map": "/PaxThePrometheus.github.io/static/js/main.38f27d66.js.map",
     "453.4d428109.chunk.js.map": "/PaxThePrometheus.github.io/static/js/453.4d428109.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b157d92b.css",
+    "static/css/main.7b6693bb.css",
     "static/js/main.38f27d66.js"
   ]
 }
