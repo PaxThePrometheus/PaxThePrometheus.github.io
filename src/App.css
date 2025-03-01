@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@581&display=swap');
+
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background: rgb(22,22,22);
+  background: linear-gradient(-45deg, rgba(22,22,22,1) 0%, rgba(52,0,67,1) 100%);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.def-text {
+  text-shadow: 0 0 10px #f1f1f1;
+  animation: def-text-glow 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes def-text-glow {
+  from {
+    text-shadow: 0 0 0px #f1f1f1, 0 0 2px #f1f1f1, 0 0 4px #f1f1f1;
+  }
+  to {
+    text-shadow: 0 0 4px #f1f1f1, 0 0 6px #f1f1f1, 0 0 8px #f1f1f1;
+  }
+}
+
+.fredoka-bold {
+  font-family: "Fredoka", serif;
+  font-optical-sizing: auto;
+  font-weight: 581;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
