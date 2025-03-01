@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.ca93d44d.css",
-    "main.js": "/static/js/main.a1460a27.js",
-    "static/js/453.4d428109.chunk.js": "/static/js/453.4d428109.chunk.js",
-    "index.html": "/index.html",
-    "main.ca93d44d.css.map": "/static/css/main.ca93d44d.css.map",
-    "main.a1460a27.js.map": "/static/js/main.a1460a27.js.map",
-    "453.4d428109.chunk.js.map": "/static/js/453.4d428109.chunk.js.map"
+    "main.css": "/PaxThePrometheus.github.io/static/css/main.ca93d44d.css",
+    "main.js": "/PaxThePrometheus.github.io/static/js/main.ed4ea00b.js",
+    "static/js/453.4d428109.chunk.js": "/PaxThePrometheus.github.io/static/js/453.4d428109.chunk.js",
+    "index.html": "/PaxThePrometheus.github.io/index.html",
+    "main.ca93d44d.css.map": "/PaxThePrometheus.github.io/static/css/main.ca93d44d.css.map",
+    "main.ed4ea00b.js.map": "/PaxThePrometheus.github.io/static/js/main.ed4ea00b.js.map",
+    "453.4d428109.chunk.js.map": "/PaxThePrometheus.github.io/static/js/453.4d428109.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ca93d44d.css",
-    "static/js/main.a1460a27.js"
+    "static/js/main.ed4ea00b.js"
   ]
 }
