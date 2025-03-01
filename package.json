@@ -1,8 +1,8 @@
 {
-  "name": "PaxThePrometheus.github.io",
+  "name": "PaxThePrometheus",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://PaxThePrometheus.github.io/index",
+  "homepage": "https://misfitscreatives.art",
   "dependencies": {
     "@gsap/react": "^2.1.2",
     "@testing-library/dom": "^10.4.0",
