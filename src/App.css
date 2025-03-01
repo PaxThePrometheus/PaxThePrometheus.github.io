@@ -1,24 +1,107 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@581&display=swap');
 
-.App {
-  text-align: center;
+body {
+  height: 100vh;
 }
 
-.App-header {
+
+.App {
+  text-align: center;
   background: rgb(22,22,22);
   background: linear-gradient(-45deg, rgba(22,22,22,1) 0%, rgba(52,0,67,1) 100%);
   min-height: 100vh;
+}
+
+.App-header {
   display: flex;
-  flex-direction: column;
+  min-height: 80vh;
+  /* flex-direction: column; */
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
 }
 
+.background-text {
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  opacity: .15;
+  filter: blur(12px); /* Blurred effect */
+  pointer-events: none; /* Prevent interaction */
+  user-select: none; /* Prevent text selection */
+  z-index: 0; /* Place it in the background */
+  color: #ffffff;
+  font-size: 28rem;
+  font-family: "Fredoka", serif;
+}
+
+.container {
+  min-height: 20vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  gap: 24px;
+}
+
+.socials {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 0px;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 48px;
+  width: 200px;
+  border-radius: 12px;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+}
+
+.url-box {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  align-items: center;
+  justify-content: center;
+  height: 48px;
+  width: 240px;
+  border-radius: 12px;
+  background: inherit;
+  box-shadow: 0 0 16px #00000080;
+}
+
+.patreon {
+  background: rgb(114,137,218);
+  background: radial-gradient(ellipse at left top,  rgb(255, 142, 195) 0%,rgba(114,137,218,0) 100%);
+}
+.discord {
+  background: rgb(114,137,218);
+  background: radial-gradient(ellipse at left top,  rgba(114,137,218,1) 0%,rgba(114,137,218,0) 100%);
+}
+.itch {
+  background: rgb(114,137,218);
+  background: radial-gradient(ellipse at left top,  rgb(218, 114, 114) 0%,rgba(114,137,218,0) 100%);
+}
+
 .def-text {
+  color: #ffffff;
   text-shadow: 0 0 10px #f1f1f1;
   animation: def-text-glow 1.5s ease-in-out infinite alternate;
+}
+
+.alt-text {
+  color: #ffffff;
+  text-shadow: 0 0 8px #000000;
+  font-size: 1.5em;
 }
 
 @keyframes def-text-glow {
@@ -37,4 +120,82 @@
   font-style: normal;
   font-variation-settings:
     "wdth" 100;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a.fredoka-bold {
+  font-family: "Fredoka", serif;
+  font-optical-sizing: auto;
+  font-weight: 581;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+@keyframes bounceClick {
+  0% {
+    transform: scale(1);
+  }
+  30% {
+    transform: scale(0.95);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  70% {
+    transform: scale(1.01);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes bounceHover {
+  0%{
+    transform: scale(1.0);
+  }
+  25% {
+    transform: scale(0.95);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  75% {
+    transform: scale(1.0);
+  }
+
+}
+
+button:active .url-box {
+  animation: bounceClick 0.2s cubic-bezier(0.64, 0, 0.78, 0);
+}
+
+button:hover .url-box {
+  animation: bounceHover 0.3s linear forwards;
+}
+
+
+@media (max-width: 600px) {
+  .background-text {
+    font-size: 6rem;
+    filter: blur(6px);
+  }
+
+  .App-header {
+    min-height: 50vh;
+  }
+
+  .container {
+    flex-direction: column;
+    min-height: 50vh;
+  }
+
+  .socials {
+    flex-direction: column;
+    gap: 8px;
+  }
+
 }
