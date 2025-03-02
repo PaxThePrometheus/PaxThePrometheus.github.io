@@ -4,6 +4,26 @@ import { ReactComponent as DiscordIcon } from './discord.svg';
 import { ReactComponent as PayPalIcon } from './paypal.svg';
 import { ReactComponent as ItchIcon } from './itch.svg';
 
+import { gsap } from "gsap";
+import { useGSAP } from "@gsap/react";
+    
+import { CustomEase } from "gsap/CustomEase";
+import { RoughEase, ExpoScaleEase, SlowMo } from "gsap/EasePack";
+    
+import { Flip } from "gsap/Flip";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { Observer } from "gsap/Observer";
+import { ScrollToPlugin } from "gsap/ScrollToPlugin";
+import { Draggable } from "gsap/Draggable";
+import { MotionPathPlugin } from "gsap/MotionPathPlugin";
+import { EaselPlugin } from "gsap/EaselPlugin";
+import { PixiPlugin } from "gsap/PixiPlugin";
+import { TextPlugin } from "gsap/TextPlugin";
+
+
+gsap.registerPlugin(useGSAP,Flip,ScrollTrigger,Observer,ScrollToPlugin,Draggable,MotionPathPlugin,EaselPlugin,PixiPlugin,TextPlugin,RoughEase,ExpoScaleEase,SlowMo,CustomEase);
+
+
 function App() {
   return (
     <div className="App">
@@ -12,11 +32,11 @@ function App() {
         <h1 className='background-text'>
           MISFITS
         </h1>
-        <p className='fredoka-bold def-text'>
+        <p className='fredoka-bold'>
           This site is under construction :/
         </p>
       <div className='container'>
-        <p className='fredoka-bold def-text temp-min'>
+        <p className='fredoka-bold temp-min'>
           In the meantime, check out our socials!
         </p>
         <div className='socials'>
